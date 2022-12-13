@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[97]:
-
-
 import os
 import shutil
 import sys
@@ -114,16 +108,5 @@ def main():
         print("Okay, No files have been moved")
 
 main()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 
 
