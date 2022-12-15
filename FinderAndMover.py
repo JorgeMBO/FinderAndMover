@@ -10,7 +10,7 @@ def Search():
 
     # Set the default directory path if the user enters "default"
     if documents_path.lower() == "default":
-        documents_path = "/users/Jorge/Desktop"
+        documents_path = "/users/&USERNAME&/Desktop"
 
     # Check if the directory path exists and raise error if not
     if not os.path.exists(documents_path):
@@ -18,7 +18,7 @@ def Search():
         while True:
             documents_path = input("Enter a valid directory path: ")
             if documents_path.lower() == "default":
-                documents_path = "/users/Jorge/Desktop"
+                documents_path = "/users/&USERNAME&/Desktop"
             if os.path.exists(documents_path):
                 break
 
@@ -99,7 +99,7 @@ def main():
     if Question.lower() == "yes":
         destination_dir = input("Enter the directory where you want to move the files: ")
         if destination_dir.lower() == "default":
-            destination_dir = "/users/Jorge/Desktop/test"
+            destination_dir = "/users/&USERNAME&/Desktop/FilesMoved"
         MoveFiles(files, documents_path, destination_dir)
     else:
         print("Okay, No files have been moved")
